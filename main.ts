@@ -137,16 +137,16 @@ let projectile: Sprite = null
 let cloud1: Image[] = []
 let quest1: Sprite = null
 game.setDialogFrame(img`
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
-    3 3 3 3 3 3 3 3 3 3 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
+    5 5 5 5 5 5 5 5 5 5 
     `)
 game.showLongText("Quest The Alien must Find 72 jewels to Build His Quantum Computer , Help Quest !!! The mission depends on YOU !", DialogLayout.Center)
 scene.setBackgroundColor(9)
