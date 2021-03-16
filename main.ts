@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const portal = SpriteKind.create()
     export const cloud = SpriteKind.create()
+    export const car = SpriteKind.create()
 }
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -312,23 +313,24 @@ function clouds () {
 }
 function environment () {
     car = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, 0)
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . a a a a a a a a a . . .
+        . . . a a a a a a a a a a . . .
+        . . . a a a d d d d a a a a a .
+        . . a a a d d d d d d d a a a .
+        a a a d d d a a a a a a d a a .
+        a 5 d d d d d d d d d d d a a .
+        a d d d d d d d d d d d d a a .
+        a a f f a a a a a a a f f a a .
+        . . f f . . . . . . . f f . . .
+    `, 0)
+    car.setKind(SpriteKind.car)
 }
 function jewelzdestroy () {
     Jewels.destroy()
